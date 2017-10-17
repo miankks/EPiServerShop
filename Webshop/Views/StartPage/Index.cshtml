@@ -1,0 +1,13 @@
+﻿@*@using EPiServer.Core*@
+@using EPiServer.Web.Mvc.Html
+
+
+@model Webshop.Models.ViewModels.DefaultPageViewModel<Webshop.Models.Pages.StartPage>
+
+
+<div>
+    <h1 @Html.EditAttributes(x=>x.CurrentPage.Heading)> @(Model.CurrentPage.Heading?? Model.CurrentPage.PageName)</h1>
+</div>
+<div>
+  @Html.PropertyFor(m => m.CurrentPage.MainBody)
+</div>
