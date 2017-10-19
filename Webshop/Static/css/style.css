@@ -9,13 +9,11 @@
 
 
 /*General*/
-	
-
 h1 {
-	font-family:verdana;
-	font-size:4.5em;
-	line-height:1.1em;
-	}
+    font-family: verdana;
+    font-size: 4.5em;
+    line-height: 1.1em;
+}
 	
 h1.jumbotron {
 	font-family:verdana;

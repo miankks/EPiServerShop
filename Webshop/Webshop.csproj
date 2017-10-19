@@ -200,6 +200,7 @@
     <Compile Include="Business\ContentExtensions.cs" />
     <Compile Include="Business\ExtensionMethods.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
+    <Compile Include="Controllers\PagePartialController.cs" />
     <Compile Include="Controllers\ProductPageController.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
@@ -219,6 +220,7 @@
   <ItemGroup>
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Properties\" />
+    <Folder Include="Views\PagePartial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\font-awesome.css" />
@@ -244,6 +246,7 @@
     <Content Include="Static\gfx\leader.png" />
     <Content Include="Static\gfx\leader2.png" />
     <Content Include="Static\gfx\logo.jpg" />
+    <Content Include="Static\gfx\logo1.png" />
     <Content Include="Static\gfx\logotype.png" />
     <Content Include="Static\gfx\meet.jpg" />
     <Content Include="Static\gfx\Naketano1299.jpg" />
@@ -289,6 +292,8 @@
     <Content Include="Views\StandardPage\Index.cshtml" />
     <Content Include="Views\Shared\Layouts\_TwoPlusOne.cshtml" />
     <Content Include="Views\ProductPage\Index.cshtml" />
+    <Content Include="Views\Shared\Navigation.cshtml" />
+    <Content Include="Views\Shared\PagePartials\PagePartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

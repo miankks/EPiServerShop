@@ -28,5 +28,13 @@ namespace Webshop.Models.Pages
             Order = 1)]
         public virtual XhtmlString MainBody { get; set; }
 
+        [CultureSpecific]
+        [Display(
+            Name = "Main content area",
+            Description = "The main content area where the main content of website exist.",
+            GroupName = SystemTabNames.Content,
+            Order = 300)]
+        public virtual ContentArea MainContentArea { get; set; }
+
     }
 }

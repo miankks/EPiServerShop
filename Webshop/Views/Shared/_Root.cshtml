@@ -26,18 +26,19 @@
 </head>
 <body>
 
-     
+    @Html.RenderEPiServerQuickNavigator()
     @Html.FullRefreshPropertiesMetaData()
-<div class="container">
+<div class="container ">
     <div class="row">
-        <div class="header">
+        <div class="header ">
             <div class="span2">
-                <img src="/Static/gfx/logo.jpg"/>
+                <img src="/Static/gfx/logo1.png"/>
             </div>
             
 
             <div class="span10">
-                <i class="fa fa-shopping-cart fa-2x pull-right"></i>
+                @{Html.RenderPartial("Navigation", Model);}
+                @*<i class="fa fa-shopping-cart fa-2x pull-right"></i>*@
             </div>
         </div>
     </div>
