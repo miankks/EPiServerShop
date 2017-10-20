@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-namespace AlloyTraining.Business
+namespace Webshop.Business
 {
     public static class ExtensionMethods
     {

@@ -1,7 +1,8 @@
-﻿@using AlloyTraining.Helpers
+﻿@using Webshop.Helpers
 @using Webshop.Models.Pages
+@using Webshop.Models.ViewModels
 
-@model Webshop.Models.ViewModels.DefaultPageViewModel<SitePageData>
+@model DefaultPageViewModel<SitePageData>
     
 
 
@@ -33,6 +34,10 @@
         @if (Model.Section != null)
         {
             @Html.MenuList(Model.Section.ContentLink, ItemTemplate)
+        }
+        else
+        {
+            <h4>Left navigation menu is not available</h4>
         }
     </div>
 </div>

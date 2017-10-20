@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using AlloyTraining.Business;
 using EPiServer.Core;
+using Webshop.Business;
 using Webshop.Models.Pages;
 
 namespace Webshop.Models.ViewModels

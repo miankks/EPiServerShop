@@ -8,13 +8,13 @@ using System.Web.Mvc;
 using System.Web.WebPages;
 using EPiServer.Core;
 using EPiServer.ServiceLocation;
-using AlloyTraining.Business;
+using Webshop.Business;
 using EPiServer.Web.Mvc.Html;
 using EPiServer.Web.Routing;
 using EPiServer;
 
 
-namespace AlloyTraining.Helpers
+namespace Webshop.Helpers
 {
     public static class HtmlHelpers
     {
@@ -108,7 +108,7 @@ namespace AlloyTraining.Helpers
         {
             if (shouldWriteLink)
             {
-                var linkTag = new System.Web.Mvc.TagBuilder("a");
+                var linkTag = new TagBuilder("a");
                 linkTag.Attributes.Add("href", url.ToHtmlString());
 
                 if (!string.IsNullOrWhiteSpace(title))
