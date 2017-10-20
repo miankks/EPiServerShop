@@ -18,6 +18,8 @@
         @Html.PropertyFor(x => x.CurrentPage.MainBody)
     </div>
 </div>
+@Html.PropertyFor(x => x.CurrentPage.MainContentArea, new {CssClass="row", tag="span8"})
+@*@Html.PropertyFor(x => x.CurrentPage.MainContentArea, new {CssClass="row" })*@
 
 @section RelatedContent
 {
@@ -31,5 +33,5 @@
         </h2>
         <p>@Html.PropertyFor(x => x.CurrentPage.UniqueSellingPoints)</p>
     </div>
+    @Html.PropertyFor(x => x.CurrentPage.RelatedContentArea, new {CssClass = "row", tag="span4"})
 }
-*

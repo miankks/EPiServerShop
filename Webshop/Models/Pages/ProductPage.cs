@@ -13,20 +13,22 @@ namespace Webshop.Models.Pages
     {
 
         [Display(
+            Name = "Unique selling point",
             GroupName = SystemTabNames.Content,
             Order = 305)]
         [UIHint(UIHint.Textarea)]
         public virtual string UniqueSellingPoints { get; set; }
 
         [Display(
+            Name = "Main content area",
             GroupName = SystemTabNames.Content,
             Order = 320)]
         public virtual ContentArea MainContentArea { get; set; }
 
         [Display(
+            Name = "RelatedContentArea",
             GroupName = SystemTabNames.Content,
-            Order = 305)]
-        [UIHint(UIHint.Textarea)]
+            Order = 330)]
         public virtual ContentArea RelatedContentArea { get; set; }
 
     }
