@@ -4,6 +4,7 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.SpecializedProperties;
+using Webshop.Models.Blocks;
 
 namespace Webshop.Models.Pages
 {
@@ -17,6 +18,13 @@ namespace Webshop.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 310)]
         public virtual XhtmlString MainBody { get; set; }
+
+        [Display(
+            Name = "Teaser",
+            Description = "Teaser block as a property.",
+            GroupName = SystemTabNames.Content,
+            Order = 320)]
+        public virtual TeaserBlock Teaser { get; set; }
 
     }
 }
