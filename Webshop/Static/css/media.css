@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 
@@ -31,7 +31,9 @@
     
 .media .mediaImg img
 {
-    width:75%;}
+    width:75%;
+    height: 50%;
+}
 
 
 .hideMyTracks {display:none;}
