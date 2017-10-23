@@ -201,6 +201,8 @@
     <Compile Include="Business\Channels\MobileResolution.cs" />
     <Compile Include="Business\ContentExtensions.cs" />
     <Compile Include="Business\ExtensionMethods.cs" />
+    <Compile Include="Controllers\ClothesBlockController.cs" />
+    <Compile Include="Controllers\ClothProductPageController.cs" />
     <Compile Include="Controllers\ListingBlockController.cs" />
     <Compile Include="Controllers\NewsPageController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
@@ -216,11 +218,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HtmlHelpers.cs" />
+    <Compile Include="Models\Blocks\ClothesBlock.cs" />
     <Compile Include="Models\Blocks\EditorialBlock.cs" />
     <Compile Include="Models\Blocks\ListingBlock.cs" />
     <Compile Include="Models\Blocks\PreviewBlock.cs" />
     <Compile Include="Models\Blocks\TeaserBlock.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
+    <Compile Include="Models\Pages\ClothProductPage.cs" />
     <Compile Include="Models\Pages\NewsPage.cs" />
     <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SearchPage.cs" />
@@ -325,6 +329,8 @@
     <Content Include="Views\NewsPage\Index.cshtml" />
     <Content Include="Views\Shared\SubNavigation.cshtml" />
     <Content Include="Views\SearchPage\Index.cshtml" />
+    <Content Include="Views\ClothProductPage\Index.cshtml" />
+    <Content Include="Views\ClothesBlock\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,15 @@
+﻿@model Webshop.Models.Blocks.ClothesBlock
+
+<div class="row">
+    <div class="media">
+        <div class="mediaImg">
+            <img src="@Url.ContentUrl(Model.ClothImage)" />
+        </div>
+        <div class="mediaText">
+            <h2>@Model.ClothHeading</h2>
+            <p>@Html.PropertyFor(x => x.ClothDescription)</p>
+            Pris: <h2>@Html.PropertyFor(x => x.ClothPrice)</h2>
+            <h2> @Html.PropertyFor(x => x.ClothLink)</h2>
+        </div>
+    </div>
+</div>
