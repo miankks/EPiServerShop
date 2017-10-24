@@ -10,20 +10,42 @@
 <h1 @Html.EditAttributes(x => x.CurrentPage.PageName)>
     @Model.CurrentPage.PageName
 </h1>
-
+<br/>
 <p class="introduction" @Html.EditAttributes(x => x.CurrentPage.MetaDescription)>@Model.CurrentPage.MetaDescription</p>
-
 <div class="row">
     <div class="span9 clearfix">
         @Html.PropertyFor(x => x.CurrentPage.MainBody)
     </div>
 </div>
+<br/>
+<div class="row">
+    <div class="span4">
+        @Html.PropertyFor(x => x.CurrentPage.ProductImage)
+        <h3> @Html.PropertyFor(x => x.CurrentPage.ProductName)</h3>
+        <h3> @Html.PropertyFor(x => x.CurrentPage.ProductPrice)</h3>
+        @Model.CurrentPage.ProductDecscription
+    </div>
+    @*<div class="span4">
+        @Html.PropertyFor(x => x.CurrentPage.ProductImage)
+        <h3 @Html.EditAttributes(x => x.CurrentPage.ProductName)>@Model.CurrentPage.ProductName </h3>
+       <h3 @Html.EditAttributes(x => x.CurrentPage.ProductPrice)>@Model.CurrentPage.ProductPrice</h3>
+        @Model.CurrentPage.ProductDecscription
+    </div>*@
+</div>
+<br/>
+<b><i><a href="http://google.com">Google</a></i></b>
+@*
+<div class="row">
+    <div class="span4">
+        <img src="@Url.ContentUrl(Model.CurrentPage.ProductImage)"/>
+    </div>
+   
+</div>
 
 <div class="row clearfix">
-    <div class="span3">
+    <div class="span6">
         @Html.PropertyFor(x => x.CurrentPage.MainContentArea, new {CssClass="row", tag="span8"})
-        @*@Html.PropertyFor(x => x.CurrentPage.ProductImage)*@
-        <a href="http://google.com">Google</a>
+        @Html.PropertyFor(x => x.CurrentPage.ProductImage)
     </div>
-</div>
+</div>*@
    

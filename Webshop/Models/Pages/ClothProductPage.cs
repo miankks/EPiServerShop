@@ -15,34 +15,36 @@ namespace Webshop.Models.Pages
     {
 
         [Display(
-            Name = "Product name",
+            Name = "Product Image",
             GroupName = SystemTabNames.Content,
             Order = 320)]
+        [UIHint(UIHint.Image)]
+        public virtual ContentReference  ProductImage { get; set; }
+
+        [Display(
+            Name = "Product name",
+            GroupName = SystemTabNames.Content,
+            Order = 321)]
         public virtual string ProductName { get; set; }
 
         [Display(
             Name = "Product price",
             GroupName = SystemTabNames.Content,
-            Order = 330)]
+            Order = 322)]
         public virtual int ProductPrice { get; set; }
 
         [Display(
             Name = "Product description",
             GroupName = SystemTabNames.Content,
-            Order = 340)]
+            Order = 323)]
         public virtual XhtmlString ProductDecscription { get; set; }
 
-        [Display(
-            Name = "Product Image",
-            GroupName = SystemTabNames.Content,
-            Order = 320)]
-        [UIHint(UIHint.Image)]
-        public virtual IList<ContentReference>  ProductImage { get; set; }
 
         [Display(
             Name = "Main content area",
             GroupName = SystemTabNames.Content,
             Order = 320)]
-        public virtual  ContentArea MainContentArea { get; set; }
+        public virtual ContentArea MainContentArea { get; set; }
+
     }
 }

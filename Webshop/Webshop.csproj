@@ -224,6 +224,9 @@
     <Compile Include="Models\Blocks\PreviewBlock.cs" />
     <Compile Include="Models\Blocks\TeaserBlock.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
+    <Compile Include="Models\Pages\ClothCategories\JackaPage.cs" />
+    <Compile Include="Models\Pages\ClothCategories\JeansPage.cs" />
+    <Compile Include="Models\Pages\ClothCategories\SkorPage.cs" />
     <Compile Include="Models\Pages\ClothProductPage.cs" />
     <Compile Include="Models\Pages\NewsPage.cs" />
     <Compile Include="Models\Pages\ProductPage.cs" />
