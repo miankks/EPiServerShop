@@ -203,6 +203,8 @@
     <Compile Include="Business\ExtensionMethods.cs" />
     <Compile Include="Controllers\ClothesBlockController.cs" />
     <Compile Include="Controllers\ClothProductPageController.cs" />
+    <Compile Include="Controllers\JacketPageController.cs" />
+    <Compile Include="Controllers\JeansPageController.cs" />
     <Compile Include="Controllers\ListingBlockController.cs" />
     <Compile Include="Controllers\NewsPageController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
@@ -211,6 +213,7 @@
     <Compile Include="Controllers\PreviewController.cs" />
     <Compile Include="Controllers\ProductPageController.cs" />
     <Compile Include="Controllers\SearchPageController.cs" />
+    <Compile Include="Controllers\ShoesPageController.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Controllers\TeaserBlockController.cs" />
@@ -224,16 +227,16 @@
     <Compile Include="Models\Blocks\PreviewBlock.cs" />
     <Compile Include="Models\Blocks\TeaserBlock.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
-    <Compile Include="Models\Pages\ClothCategories\JackaPage.cs" />
-    <Compile Include="Models\Pages\ClothCategories\JeansPage.cs" />
-    <Compile Include="Models\Pages\ClothCategories\SkorPage.cs" />
     <Compile Include="Models\Pages\ClothProductPage.cs" />
+    <Compile Include="Models\Properties\JeansPage.cs" />
     <Compile Include="Models\Pages\NewsPage.cs" />
     <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SearchPage.cs" />
+    <Compile Include="Models\Properties\ShoesPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
+    <Compile Include="Models\Properties\JacketPage.cs" />
     <Compile Include="Models\ViewModels\BlockEditPageViewModel.cs" />
     <Compile Include="Models\ViewModels\DefaultPageViewModel.cs" />
     <Compile Include="Models\ViewModels\FooterModel.cs" />
@@ -243,7 +246,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\Properties\" />
     <Folder Include="Views\PagePartialWide\" />
     <Folder Include="Views\PagePartial\" />
   </ItemGroup>
@@ -334,6 +336,9 @@
     <Content Include="Views\SearchPage\Index.cshtml" />
     <Content Include="Views\ClothProductPage\Index.cshtml" />
     <Content Include="Views\ClothesBlock\Index.cshtml" />
+    <Content Include="Views\ShoesPage\Index.cshtml" />
+    <Content Include="Views\JeansPage\Index.cshtml" />
+    <Content Include="Views\JacketPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
